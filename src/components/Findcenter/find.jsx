@@ -33,10 +33,10 @@ const Find = () => {
       {SelectContent}
     </li>
   ));
-  //   let select;
+  let select = "서울";
   const handleClick = (selectedItem) => {
     // 클릭된 항목에 대한 작업을 수행합니다.
-    // select = selectedItem;
+    select = selectedItem;
     console.log("선택된 항목:", selectedItem);
   };
 
@@ -47,7 +47,7 @@ const Find = () => {
         <div className="SelectMenu">{listItems}</div>
         <div className="MenuTitle">
           <h1>전국 재난심리회복지원센터 현황</h1>
-          <Map />
+          <Map selection = {select}/>
         </div>
       </div>
     </>
