@@ -1,0 +1,53 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Pretendard';
+}
+
+.MainContainer {
+    width: 100%;
+    height: 100%;
+
+    margin-top: 5%;
+
+    display: flex;
+}
+
+.SelectMenu {
+    font-size: 200%;
+
+    margin-right: 10%;
+    margin-left: 10%;
+
+    list-style: none;
+}
+
+.MenuTitle {
+    /* background-color: gainsboro; */
+    color: #000000;
+
+    padding-right: 15%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+
+    height: fit-content;
+}
+
+.MenuTitle h1 {
+    margin-bottom: 5%;
+}
+
+.SelectMenu li {
+    background-color: gainsboro;
+
+    text-align: center;
+
+    width: 120%;
+
+    margin-bottom: 10%;
+
+    cursor: pointer;
+}

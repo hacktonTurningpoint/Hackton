@@ -1,34 +1,14 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../NavBar/navbar";
 
 const { kakao } = window;
 
 const Map = () => {
-  const [map, setMap] = useState(null);
-
-  //처음 지도 그리기
-  useEffect(() => {
-    const container = document.getElementById("map");
-    const options = { center: new kakao.maps.LatLng(33.450701, 126.570667) };
-    const kakaoMap = new kakao.maps.Map(container, options);
-    setMap(kakaoMap);
-  }, []);
-
   return (
-    <>
-      <NavBar />
-      <div
-        style={{
-          width: "100%",
-          position: "relative",
-          marginTop: "3%",
-          zIndex: "-1",
-          // display: "inline-block",
-        }}
-      >
-        <div id="map" style={{ width: "100%", height: "500px" }}></div>
-      </div>
-    </>
+    <Map
+      center={{ lat: 33.5563, lng: 126.79581 }} // 지도의 중심 좌표
+      style={{ width: "50vw", height: "30vw" }} // 지도 크기
+      level={3} // 지도 확대 레벨
+    ></Map>
   );
 };
 
