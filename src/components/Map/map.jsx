@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
-// import React, { useEffect, useState } from "react";
-
-// const { kakao } = window;
-
 const Maps = (props) => {
   const locations = [
     {
@@ -49,19 +45,19 @@ const Maps = (props) => {
     },
     {
       title: "충북",
-      latlng: { lat: 35.194960312216914, lng: 126.89032200019774 },
+      latlng: { lat: 36.622751975534, lng: 127.40876883271893 },
     },
     {
       title: "충남",
-      latlng: { lat: 35.194960312216914, lng: 126.89032200019774 },
+      latlng: { lat: 36.65617828064491, lng: 126.68418306999521 },
     },
     {
       title: "전북",
-      latlng: { lat: 35.194960312216914, lng: 126.89032200019774 },
+      latlng: { lat: 35.8544546302801, lng: 127.0653416395065 },
     },
     {
       title: "전남",
-      latlng: { lat: 35.194960312216914, lng: 126.89032200019774 },
+      latlng: { lat: 34.81090930123023, lng: 126.3949557950258 },
     },
     {
       title: "경북",
@@ -77,7 +73,6 @@ const Maps = (props) => {
     },
   ];
   let x, y;
-  // locations.map((props.selection))
   useEffect(() => {
     console.log(props.selection);
   }, [props]);

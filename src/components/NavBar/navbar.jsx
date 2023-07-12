@@ -16,12 +16,19 @@ const NavBar = () => {
             id="LogoImage"
             className="LogoImage"
             src={image}
+            alt=""
           />
           <li>
             <Link to={"/find"}>재난심리회복지원센터 찾기</Link>
           </li>
           <li>
-            <Link to={"/check"}>재난 메뉴얼 확인</Link>
+            <Link
+              to={
+                "https://www.safekorea.go.kr/idsiSFK/neo/sfk/cs/contents/prevent/prevent09.html?menuSeq=126"
+              }
+            >
+              재난 메뉴얼 확인
+            </Link>
           </li>
         </ul>
       </div>

@@ -8,7 +8,7 @@ const Maps = lazy(() => import("../components/Map/map"));
 const NotFound = lazy(() => import("../components/NotFound"));
 const NavBar = lazy(() => import("../components/NavBar/navbar"));
 const Find = lazy(() => import("../components/Findcenter/find"));
-const Checkmenu = lazy(() => import("../components/Checkmenu/checkmenu"));
+// const Checkmenu = lazy(() => import("../components/Checkmenu/checkmenu"));
 
 const Router = () => {
   return (
@@ -19,7 +19,7 @@ const Router = () => {
         <Route path="/map" element={<Maps />} />
         <Route path="/navbar" element={<NavBar />} />
         <Route path="/find" element={<Find />} />
-        <Route path="/check" element={<Checkmenu />} />
+        {/* <Route path="/check" element={<Checkmenu />} /> */}
       </Routes>
     </Suspense>
   );
