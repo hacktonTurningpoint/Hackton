@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Map, MapMarker } from "react-kakao-maps-sdk";
 
 // import React, { useEffect, useState } from "react";
@@ -77,17 +78,17 @@ const Maps = (props) => {
   ];
   let x, y;
   // locations.map((props.selection))
-  console.log(props.selection);
+  useEffect(() => {
+    console.log(props.selection);
+  }, [props]);
 
   for (let i = 0; i < locations.length; i++) {
-    if (locations.title === props.selection) {
-      x = locations.latlng.lat;
-      y = locations.letlng.lng;
+    if (locations[i].title === props.selection) {
+      x = locations[i].latlng.lat;
+      y = locations[i].latlng.lng;
       break;
     }
   }
-  console.log(x);
-  console.log(y);
 
   return (
     <Map

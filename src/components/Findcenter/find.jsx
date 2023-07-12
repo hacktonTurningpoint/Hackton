@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 // import { ReactDOM } from "react";
 import NavBar from "../NavBar/navbar";
 import "../../style/Find.css";
 import Map from "../Map/map";
 
 const Find = () => {
+  const [select, setSelect] = useState("서울");
   const SelectContent = [
     "서울",
     "부산",
@@ -33,10 +34,9 @@ const Find = () => {
       {SelectContent}
     </li>
   ));
-  let select = "서울";
   const handleClick = (selectedItem) => {
     // 클릭된 항목에 대한 작업을 수행합니다.
-    select = selectedItem;
+    setSelect(selectedItem);
     console.log("선택된 항목:", selectedItem);
   };
 
@@ -47,7 +47,7 @@ const Find = () => {
         <div className="SelectMenu">{listItems}</div>
         <div className="MenuTitle">
           <h1>전국 재난심리회복지원센터 현황</h1>
-          <Map selection = {select}/>
+          <Map selection={select} />
         </div>
       </div>
     </>
