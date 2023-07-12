@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30%;  
+}
+
+.LogoImage {
+    margin-right: 70%;
+
+    cursor: pointer;
+}
+
+.menu {
+    height: 3vw;
+    background-color: rgba(213, 235, 255, 0.26);
+}
+
+.menu ul {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-top: 1vw;
+
+    cursor: pointer;
+}
+
+.menu li:hover {
+    border-bottom: 1px solid black;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
