@@ -1,9 +1,14 @@
 import React from "react";
-// import { useEffect } from "react";
-// import { useNavigate } from "react-router-dom";
+import Image from "../../images/world 1.svg";
+import "../../style/Notfound.css";
 
 const NotFound = () => {
-  return <>존재하지 않는 페이지</>;
+  return (
+    <div className="box">
+      <img className="logo" src={Image} />
+      <h1>존재하지 않는 페이지</h1>
+    </div>
+  );
 };
 
 export default NotFound;

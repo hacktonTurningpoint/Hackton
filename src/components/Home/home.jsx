@@ -13,12 +13,12 @@ export default class SimpleSlider extends Component {
   render() {
     const settings = {
       infinite: true,
-      speed: 10000,
+      speed: 9500,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 1,
-      // cssEase: "liner",
+      fade: true,
     };
     return (
       <>

@@ -1,19 +1,26 @@
 import React from "react";
 import "../../style/NavBar.css";
 import image from "../../images/logo.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <div className="box">
       <div className="menu">
         <ul>
-          <img className="LogoImage" src={image} />
+          <img
+            onClick={() => {
+              navigate("/");
+            }}
+            id="LogoImage"
+            className="LogoImage"
+            src={image}
+          />
           <li>
-            <a href="">재난심리회복지원센터 찾기</a>
+            <Link to={"/find"}>재난심리회복지원센터 찾기</Link>
           </li>
-          <li>
-            <a href="">재난 메뉴얼 확인</a>
-          </li>
+          <li>재난 메뉴얼 확인</li>
         </ul>
       </div>
     </div>
